@@ -21,6 +21,7 @@ export default {
 		extend: {
 			fontFamily: {
 				'impact': ['Impact', 'Anton', 'sans-serif'],
+				'norwester': ['Norwester', 'Impact', 'Anton', 'sans-serif'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

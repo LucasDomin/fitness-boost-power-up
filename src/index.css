@@ -1,5 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@font-face {
+  font-family: 'Norwester';
+  src: url('/fonts/norwester.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @tailwind base;
 @tailwind components;
@@ -69,7 +76,7 @@
   }
   
   .impact-text {
-    @apply font-impact tracking-tight;
+    @apply font-norwester tracking-tight;
     letter-spacing: -0.03em;
   }
 }
