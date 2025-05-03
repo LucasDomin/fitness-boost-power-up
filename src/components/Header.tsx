@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center relative z-10">
         <div className="h-16 w-40 flex items-center">
           <img 
-            src="/lovable-uploads/ef6ec0bf-ca2d-400b-882a-67f2796c3691.png" 
+            src="/lovable-uploads/567eaa04-8453-40e5-adc1-b54cf331d899.png" 
             alt="Suplementar Fitness" 
             className="h-full w-auto object-contain"
           />
