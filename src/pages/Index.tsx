@@ -5,6 +5,7 @@ import Hero from "../components/Hero";
 import Benefits from "../components/Benefits";
 import Products from "../components/Products";
 import CallToAction from "../components/CallToAction";
+import SectionDivider from "../components/SectionDivider";
 
 const Index = () => {
   return (
@@ -12,8 +13,11 @@ const Index = () => {
       <Header />
       <main className="flex-grow">
         <Hero />
+        <SectionDivider />
         <Benefits />
+        <SectionDivider />
         <Products />
+        <SectionDivider />
         <CallToAction />
       </main>
       <footer className="w-full py-6 px-4 bg-black border-t border-zinc-800">
