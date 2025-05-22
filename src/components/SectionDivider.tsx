@@ -3,10 +3,9 @@ import React from 'react';
 
 const SectionDivider = () => {
   return (
-    <div className="relative h-16 md:h-24 bg-transparent overflow-hidden">
-      <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-24 h-px bg-primary/30"></div>
-      </div>
+    <div className="relative h-8 md:h-16 bg-transparent overflow-hidden">
+      {/* Subtle gradient transition instead of a visible divider */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-transparent opacity-50"></div>
     </div>
   );
 };
