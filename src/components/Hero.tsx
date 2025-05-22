@@ -13,8 +13,8 @@ const Hero = () => {
       
       <div className="container mx-auto relative z-20">
         <div className="max-w-3xl mx-auto md:ml-0 text-center md:text-left">
-          <h1 className="impact-text text-4xl md:text-6xl lg:text-7xl text-white mb-4 leading-tight animate-fade-in">
-            💪 Suplementar <span className="red-accent">faz toda a diferença</span>!
+          <h1 className="impact-text text-4xl md:text-6xl lg:text-7xl text-primary mb-4 leading-tight animate-fade-in">
+            <span className="text-white">Suplementar</span> faz toda a diferença!
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
