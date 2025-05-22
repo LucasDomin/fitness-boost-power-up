@@ -38,22 +38,21 @@ const Products = () => {
     <section className="w-full py-20 px-4 bg-zinc-900">
       <div className="container mx-auto">
         <h2 className="impact-text text-3xl md:text-4xl text-center mb-16 text-white">
-          PRODUTOS <span className="red-accent">EM DESTAQUE</span>
+          PRODUTOS <span className="text-primary">EM DESTAQUE</span>
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <div 
               key={index} 
-              className="bg-black rounded-lg overflow-hidden border border-zinc-800 hover:border-primary transition-all duration-300 hover:-translate-y-1 flex flex-col"
+              className="bg-black rounded-lg overflow-hidden border border-zinc-800 hover:border-primary transition-all duration-300 hover:-translate-y-1 flex flex-col h-full"
             >
-              <div className="h-60 overflow-hidden relative">
+              <div className="h-60 overflow-hidden relative flex items-center justify-center bg-gradient-to-b from-zinc-900 to-black p-4">
                 <img 
                   src={product.image} 
                   alt={product.name} 
                   className="w-full h-full object-contain transform hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
               </div>
               
               <div className="p-6 flex flex-col flex-grow">
@@ -63,7 +62,7 @@ const Products = () => {
                   <WhatsAppButton 
                     text={product.buttonText} 
                     message={product.message} 
-                    className="w-full text-sm py-2"
+                    className="w-full text-sm py-3"
                   />
                 </div>
               </div>
