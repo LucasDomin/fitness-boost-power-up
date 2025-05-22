@@ -23,10 +23,17 @@ const WhatsAppButton: React.FC<WhatsAppButtonProps> = ({
   return (
     <button
       onClick={handleClick}
-      className={`bg-green-600 hover:bg-green-700 text-white font-norwester py-3 px-6 rounded-md transition-all duration-300 flex items-center justify-center gap-2 hover:scale-105 ${className}`}
+      className={`bg-green-600 text-white font-norwester py-3 px-6 rounded-md 
+        flex items-center justify-center gap-2 relative overflow-hidden
+        transition-all duration-300 ${className}
+        before:content-[''] before:absolute before:inset-0 before:bg-white/10 before:translate-y-full 
+        before:hover:translate-y-0 before:transition-transform before:duration-300
+        after:content-[''] after:absolute after:inset-0 after:bg-black/10 after:translate-y-[-100%] 
+        after:hover:translate-y-0 after:transition-transform after:duration-300
+        transform hover:translate-y-[-3px] hover:shadow-lg`}
     >
-      <MessageCircle className="w-6 h-6" />
-      {text}
+      <MessageCircle className="w-6 h-6 relative z-10" />
+      <span className="relative z-10">{text}</span>
     </button>
   );
 };

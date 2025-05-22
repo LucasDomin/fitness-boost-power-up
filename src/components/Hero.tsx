@@ -14,17 +14,17 @@ const Hero = () => {
       <div className="container mx-auto relative z-20">
         <div className="max-w-3xl mx-auto md:ml-0 text-center md:text-left">
           <h1 className="impact-text text-4xl md:text-6xl lg:text-7xl text-white mb-4 leading-tight animate-fade-in">
-            💪 Transforme Seu Corpo com <span className="red-accent">Suplementos</span> de Alta Performance!
+            💪 Suplementar <span className="red-accent">faz toda a diferença</span>!
           </h1>
           
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl">
-            Descubra os produtos mais eficazes para treinos intensos, saúde do coração e resultados reais. Acesse ofertas exclusivas e fale diretamente conosco no WhatsApp!
+            Dê ao seu corpo o suporte que ele merece. Aqui você encontra suplementos de qualidade, pensados para sua saúde, desempenho e bem-estar.
           </p>
           
           <WhatsAppButton 
-            text="Fale conosco no WhatsApp" 
-            message="Olá! Vi o site e quero saber mais sobre os suplementos!" 
-            className="mx-auto md:mx-0 text-lg animate-pulse-subtle"
+            text="Catálogo de promoções" 
+            message="Olá! Vi o site e quero saber mais sobre as promoções de suplementos!" 
+            className="mx-auto md:mx-0 text-lg"
           />
         </div>
       </div>
